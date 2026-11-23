@@ -11,6 +11,11 @@ a{
     font-size: clamp(20px, 2vw, 40px);
 }
 
+h2{
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(40px, 6vw, 135px);
+}
+
 main {
     display: flex;
     flex: 1;
@@ -18,7 +23,7 @@ main {
     align-items: center;
     width: 100%;
     justify-self: center;
-    gap: clamp(15px, 10vw, 50px);
+    gap: clamp(15px, 3vw, 50px);
 }
 
 header, footer {
@@ -71,12 +76,45 @@ footer nav ul {
 }
 
 .back {
-    width: 40px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
 }
 
 .back-contain {
     display: none;
+}
+
+.offer{
+    display: flex;
+}
+
+.offer--down{
+    display: flex;
+}
+
+.offer-title{
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(40px, 5vw, 135px);
+    transform: rotate(-8deg);
+    color: #593630;
+}
+
+.offer-button{
+    width: clamp(90px, 20vw, 310px);
+    height: clamp(90px, 20vw, 310px);
+    border-radius: 50%;
+    background-color: #8C6354;
+    color: #FFEEBF;
+    font-size: clamp(20px, 4vw, 60px);
+    font-family: "Roboto Slab", serif;
+    transform: rotate(-10deg);
+}
+
+.highlight{
+    position: absolute;
+    width: clamp(22px, 4vw, 76px);
+    top: clamp(15px, 3vw, 40px);
+    right: clamp(15px, 3vw, 40px)
 }
 
 @media (max-width: 750px) {
