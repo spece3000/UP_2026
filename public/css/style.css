@@ -1,0 +1,93 @@
+body {
+    background-color: #FFF8F0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 10vw, 50px);
+}
+
+a{
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-self: center;
+    gap: clamp(15px, 10vw, 50px);
+}
+
+header, footer {
+    background-color: #F5E6D3;
+    height: clamp(70px, 10vw, 100px);
+    width: 100%;
+    padding: 20px clamp(30px, 10vw, 70px);
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+}
+
+.logo-contain{
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    border-radius: 20px 20px 0px 0px;
+}
+
+footer nav{
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: clamp(200px, 20vw, 315px);
+    max-height: 70px;
+}
+
+.icon {
+    width: clamp(30px, 5vw, 50px);
+    height: clamp(30px, 5vw, 50px);
+}
+
+.back {
+    width: 40px;
+    height: 25px;
+}
+
+.back-contain {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .logo-contain {
+        display: none;
+    }
+    .protected {
+        display: none;
+    }
+    .back-contain{
+        display: flex;
+        align-items: center;
+    }
+}
