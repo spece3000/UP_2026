@@ -448,6 +448,77 @@ label{
     font-family: "Roboto Slab", serif;
 }
 
+.catalog--sec{
+    width: 80%;
+    background-color: #FFEBD2;
+    border-radius: 10px;
+    padding: clamp(15px, 3vw, 25px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.manipulate_catalog{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2;
+}
+
+.product_cart{
+    border-radius: 10px;
+    background-color: #FFE2BD;
+    width: clamp(100px, 10vw, 250px);
+    padding: clamp(10px, 3vw, 18px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.img_product--catalog{
+    width: clamp(80px, 5vw, 200px);
+    border-radius: 10px;
+}
+
+.product_title--catalog{
+    font-size: clamp(10px, 3vw, 20px);
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+}
+
+.product_price--catalog{
+    font-size: clamp(15px, 3vw, 25px);
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+}
+
+.buttons_product--catalog{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.buttons_product--catalog button{
+    padding: 10px;
+}
+
+.select--catalog {
+    background-color: #FFE2BD;
+    border-radius: 10px;
+    font-size: clamp(20px, 3vw, 50px);
+    padding: 10px ;
+}
+
+.pug_button{
+    width: 60px;
+    height: 60px;
+}
+
 @media (max-width: 970px){
     .cart_services--button{
         width: 100%;
