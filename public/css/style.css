@@ -1,0 +1,528 @@
+body {
+    background-color: #FFF8F0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 3vw, 50px);
+}
+
+a{
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+h2{
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(40px, 6vw, 135px);
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-self: center;
+    gap: clamp(15px, 3vw, 50px);
+}
+
+header, footer {
+    background-color: #F5E6D3;
+    height: clamp(70px, 10vw, 100px);
+    width: 100%;
+    padding: 20px clamp(30px, 10vw, 70px);
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+}
+
+.logo-contain{
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    border-radius: 20px 20px 0px 0px;
+}
+
+footer nav{
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: clamp(200px, 20vw, 315px);
+    max-height: 70px;
+}
+
+.icon {
+    width: clamp(30px, 5vw, 50px);
+    height: clamp(30px, 5vw, 50px);
+}
+
+.back {
+    width: 50px;
+    height: 50px;
+}
+
+.back-contain {
+    display: none;
+}
+
+.offer{
+    display: flex;
+    align-items: center;
+}
+
+.offer--down{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.offer-title{
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(40px, 5vw, 135px);
+    transform: rotate(-8deg);
+    color: #593630;
+    margin: 40px 0px;
+    width: clamp(320px, 40vw, 900px);
+    text-align: center;
+}
+
+button{
+    border-radius: 50%;
+    background-color: #8C6354;
+    color: #FFEEBF;
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+}
+
+.offer-button{
+    width: clamp(90px, 20vw, 310px);
+    height: clamp(90px, 20vw, 310px);
+    border-radius: 50%;
+    background-color: #8C6354;
+    color: #FFEEBF;
+    font-size: clamp(20px, 4vw, 60px);
+    font-family: "Roboto Slab", serif;
+    transform: rotate(-10deg);
+}
+
+.offer--img{
+    width: clamp(150px, 36vw, 670px);
+}
+
+.offer-text{
+    position: relative;
+    font-size: clamp(20px, 2vw, 50px);
+    width: clamp(170px, 15vw, 300px);
+    transform: rotate(10deg);
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.offer-text img{
+    position: absolute;
+    top: -75px;
+    width: clamp(100px, 12vw, 176px);
+}
+
+.highlight{
+    position: absolute;
+    width: 22px;
+    top: 20px;
+    right: 20px;
+}
+
+.highlight-offer{
+    position: absolute;
+    width: clamp(22px, 4vw, 76px);
+    top: clamp(15px, 3vw, 40px);
+    right: clamp(15px, 3vw, 40px)
+}
+
+.index-filter{
+    width: 100%;
+}
+
+.buttons_filter--wheel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button_rotate{
+    cursor: pointer;
+    width: clamp(50px, 7vw, 100px);
+}
+
+.reverse{
+    transform: scale(-1, 1);
+}
+
+.wheel-div{
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+    overflow: hidden;
+    height: clamp(100px, 33vw, 500px);
+    position: relative;
+}
+
+.wheel-img{
+    margin-top: clamp(60px, 8vw, 120px);
+    transform: rotate(-45deg);
+    cursor: pointer;
+    width: clamp(700px, 70vw, 1480px);
+}
+
+.buttons_filter--wheel--tel{
+    display: none;
+}
+
+.button_touch{
+    display: none;
+}
+
+.about-sec{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 100vw, 30px)
+}
+
+.about-sec div{
+    display: flex;
+    align-items: center;
+}
+
+.about-sec div p{
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(15px, 3vw, 40px);
+    text-align: justify;
+    padding: 0px clamp(18px, 5vw, 180px);
+}
+
+.about-sec div img{
+    height: clamp(140px, 30vw, 400px);
+}
+
+.cart_services--sec{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.cart_services{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 16px;
+    background-color: #FFF3E4;
+    width: 80%;
+}
+
+.cart_services--description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    gap: 10px;
+}
+
+.cart_services--UI{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cart_services--img {
+    width: clamp(280px, 30vw, 500px);
+}
+
+.cart_services--title{
+    font-family: "Great Vibes", cursive;
+    color: #593630;
+    font-size: clamp(22px, 3vw, 40px);
+    text-align: center;
+}
+
+.cart_services--text{
+    font-size: clamp(20px, 2vw, 25px);
+    font-family: "Oswald", sans-serif;
+    text-align: justify;
+}
+
+.cart_services--button{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cart_services--price{
+    font-size: clamp(30px, 2.5vw, 40px);
+    font-family: "Roboto Slab", serif;
+}
+
+.cart_services--data{
+    color: #593630;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: clamp(20px, 2vw, 25px);
+    width: clamp(160px, 15vw, 200px);
+}
+
+.product--sec{
+    width: 80%;
+    display: flex;
+    gap: clamp(60px, 4vw, 90px);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.product_img-div{
+    display: flex;
+    gap: clamp(40px, 3vw, 60px);
+}
+
+.secondary_images--product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product_descripthion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product_price--div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_div--buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary_image--product{
+    border-radius: 10px;
+    border: clamp(1px, 1vw, 3px) solid black;
+    width: clamp(70px, 10vw, 150px);
+}
+
+.main_image--product{
+    border-radius: 10px;
+    border: 3px solid black;
+    width: clamp(300px, 35vw, 600px);
+}
+
+.title_product{
+    color: #593630;
+    font-family: "Roboto Slab", serif;
+    font-size: clamp(25px, 2vw, 40px);
+    text-align: justify;
+    width: 100%;
+}
+
+.product_price{
+    color: #593630;
+    font-family: "Roboto Slab", serif;
+    font-size: clamp(25px, 2vw, 30px);
+}
+
+.product_qantity{
+    color: #593630;
+    font-family: "Roboto Slab", serif;
+    font-size: clamp(25px, 2vw, 30px);
+}
+
+.product_text{
+    font-size: clamp(15px, 2vw, 25px);
+    font-family: "Oswald", sans-serif;
+    text-align: justify;
+}
+
+.button_buy--product{
+    border-radius: 10px;
+    padding: clamp(5px, 0.7vw, 10px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    font-size: clamp(20px, 1.7vw, 30px);
+}
+
+.button_favourites--product{
+    padding: 10px;
+}
+
+.img_basket{
+    width: clamp(40px, 3vw, 60px);
+}
+
+.img_favourit{
+    width: clamp(40px, 3vw, 60px);
+}
+
+.filtr_catalog--sec{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.inp_catalog {
+    accent-color: #8C6354;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #FFF8F0;
+    border: 3px #8C6354 solid;
+    transition: 500ms;
+}
+
+.inp_catalog::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 0px;
+    height: 0px;
+    font-size: 30px;
+    background-image: url("../img/button_before.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    transition: 500ms;
+}
+
+.inp_catalog:checked{
+    background-color: #8C6354;
+    transition: 500ms;
+}
+
+.inp_catalog:checked::after{
+    width: 10px;
+    height: 10px;
+    transition: 500ms;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: clamp(20px, 3vw, 30px);
+    font-family: "Roboto Slab", serif;
+}
+
+@media (max-width: 970px){
+    .cart_services--button{
+        width: 100%;
+    }
+    .product--sec{
+        flex-direction: column;
+    }
+}
+@media (max-width: 750px) {
+    .logo-contain {
+        display: none;
+    }
+    .protected {
+        display: none;
+    }
+    .back-contain{
+        display: flex;
+        align-items: center;
+    }
+    .offer-title{
+        margin-top: 10px;
+    }
+    .offer-text img{
+        display: none;
+    }
+    .buttons_filter--wheel{
+        display: none;
+    }
+    .wheel-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 420px;
+    }
+    .wheel-img{
+        margin: 0;
+        cursor: auto;
+        width: 360px;
+        height: 360px;
+    }
+    .buttons_filter--wheel--tel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .button_touch{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        width: 135px;
+        height: 135px;
+    }
+    .cart_services{
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .offer div{
+        width: 280px;
+    }
+    .offer-button{
+        margin-left: 30px;
+    }
+    .about-sec div img{
+        display: none;
+    }
+    .offer--img{
+        width: 145px;
+        height: 125px;
+    }
+    .main_image--product{
+        width: 250px;
+    }
+}

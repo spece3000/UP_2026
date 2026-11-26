@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILKFACTORY - главная</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo-contain" href="index.html"><img src="img/logo.png" alt="логотип" class="logo"></a>
+        <a class="back-contain" href="index.html"><img src="img/icons/logo_tel.png" alt="логотип" class="back"></a>
+        <nav>
+            <ul>
+                <li><a href="service.html">услуги</a></li>
+                <li><a href="catalog.html">каталог</a></li>
+                <li><a href="profile.html"><img src="img/icons/profile.png" alt="профиль" class="icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filtr_catalog--sec">
+            <label for="inp_chockolate"><input class="inp_catalog" id="inp_chockolate" type="checkbox">шоколад</label>
+            <label for="inp_cake"><input class="inp_catalog" id="inp_cake" type="checkbox">торты</label>
+            <label for="inp_cacao"><input class="inp_catalog" id="inp_cacao" type="checkbox">какао</label>
+            <label for="inp_candy"><input class="inp_catalog" id="inp_candy" type="checkbox">конфеты</label>
+            <label for="inp_other"><input class="inp_catalog" id="inp_other" type="checkbox">прочее</label>
+        </section>
+        <section class="catalog--sec">
+            <div class="manipulate_catalog">
+                <select></select>
+                <div class="pug_button"></div>
+            </div>
+            <div class="catalog">
+                <div class="product_cart">
+                    <img src="" alt="" class="img_product--catalog">
+                    <h4 class="product_title--catalog"></h4>
+                    <p class="product_price--catalog"></p>
+                    <div class="buttons_product--catalog">
+                        <button class="button_cart--catalog"><img class="img_cart--catalog" src="" alt=""></button>
+                        <button class="button_favorit--catalog"><img class="img_favorit--catalog" src="" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a>89010870363</a></li>
+                <li><a>MILK@mail.ru</a></li>
+                <li><a><img src="img/icons/vk.png" alt="вк" class="icon"></a></li>
+                <li><a><img src="img/icons/tg.png" alt="телеграмм" class="icon"></a></li>
+                <li class="protected"><a>все права защищены</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
