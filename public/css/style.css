@@ -449,7 +449,7 @@ label{
 }
 
 .catalog--sec{
-    width: 80%;
+    width: 90%;
     background-color: #FFEBD2;
     border-radius: 10px;
     padding: clamp(15px, 3vw, 25px);
@@ -472,7 +472,7 @@ label{
 .product_cart{
     border-radius: 10px;
     background-color: #FFE2BD;
-    width: clamp(100px, 10vw, 250px);
+    max-width: 250px;
     padding: clamp(10px, 3vw, 18px);
     display: flex;
     flex-direction: column;
@@ -504,7 +504,12 @@ label{
 }
 
 .buttons_product--catalog button{
-    padding: 10px;
+    padding: clamp(5px, 3vw, 15px);
+    height: clamp(35px, 3vw, 75px);
+    width: clamp(35px, 3vw, 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .select--catalog {
@@ -515,8 +520,26 @@ label{
 }
 
 .pug_button{
-    width: 60px;
-    height: 60px;
+    width: clamp(40px, 3vw, 60px);
+    height: clamp(40px, 3vw, 60px);
+    background-color: #FFE2BD;
+    color: black;
+}
+
+.img_cart--catalog{
+    width: clamp(20px, 2vw, 50px);
+}
+
+.img_favorit--catalog{
+    width: clamp(20px, 2vw, 50px);
+}
+
+.product_title--catalog{
+    font-size: clamp(10px, 2vw, 20px);
+}
+
+.product_price--catalog{
+    font-size: clamp(15px, 3vw, 25px);
 }
 
 @media (max-width: 970px){
@@ -578,6 +601,10 @@ label{
     .cart_services{
         flex-direction: column;
     }
+    .catalog{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3;
+}
 }
 @media (max-width: 480px) {
     .offer div{
